@@ -44,7 +44,7 @@ public class CategoryService {
         categoryRepository.delete(deletedCategory);
     }
 
-    //Discount by category name (Jana) v2
+    //Discount by category name (Jana) v3
     public void applyDiscountToCategoryByName(String categoryName,Integer branchId, double discountPercentage) {
         Category category = categoryRepository.findCategoryByName(categoryName);
         Menu m = menuRepository.findMenuByCategoryAndBranch(categoryName,branchId);
