@@ -451,7 +451,7 @@ public List<Store> getBestServiceForCafesByName(String name) {
             stores.add(address.getBranch().getStore());}
         List<Store> bothList = new ArrayList<>();
         for (Store store : stores) {
-            if (store.getTypeOfActivity().equals("RESTAURANT")) {
+            if (store.getTypeOfActivity().equals("BOTH")) {
                 bothList.add(store);}}
         List<Store> bestForBoth = new ArrayList<>();
         while (!bothList.isEmpty()) {
